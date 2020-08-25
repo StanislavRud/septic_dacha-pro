@@ -1,0 +1,5 @@
+[2020-08-25 15:45:01] layer "+7 (495) 128 75 48": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2020-08-25 15:45:00] layer "Москва ул. Бутлерова 15 а  +7 495 128-75-48  info@dacha-pro.ru ": Unsupported extension: ru
+[2020-08-25 15:45:00] layer "Москва ул. Бутлерова 15 а +7 495 128-75-48 info@dacha-pro.ru": Unsupported extension: ru
+[2020-08-25 15:45:01] layer "+7 (       )": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2020-08-25 15:45:00] layer "+7 (     )": Expected Either a default asset specification or a layer asset specification but "+" found.
