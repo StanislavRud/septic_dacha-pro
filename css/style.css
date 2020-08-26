@@ -332,40 +332,79 @@ header .header_bottom .container {
       .wrapper .questions .container .questions_block .item:target .icon:after {
         border-top: none;
         border-bottom: 10px solid #FF8400; }
-.wrapper .wy_we .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 80px 0; }
-  .wrapper .wy_we .container h2 {
-    text-transform: uppercase;
-    font-family: "Helvetica Neue Cyr Bold"; }
-  .wrapper .wy_we .container .wy_we__block {
+.wrapper .wy_we {
+  background: #f2f3f4; }
+  .wrapper .wy_we .container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 80px; }
-    .wrapper .wy_we .container .wy_we__block .item_we {
-      width: 45%;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0; }
+    .wrapper .wy_we .container h2 {
+      text-transform: uppercase;
+      font-family: "Helvetica Neue Cyr Bold"; }
+    .wrapper .wy_we .container .wy_we__block {
       display: flex;
-      padding: 5px;
-      align-items: center; }
-      .wrapper .wy_we .container .wy_we__block .item_we:nth-child(n + 3) {
-        margin-top: 65px; }
-      .wrapper .wy_we .container .wy_we__block .item_we img {
-        width: 65px;
-        margin-right: 30px; }
-      .wrapper .wy_we .container .wy_we__block .item_we .item_we_desc h3 {
-        font-size: 22px;
-        font-family: "Helvetica Neue Cyr Bold", sans-serif;
-        margin-bottom: 18px; }
-      .wrapper .wy_we .container .wy_we__block .item_we .item_we_desc p {
-        font-size: 16px;
-        font-family: 'Helvetica Neue Cyr Thin', sans-serif; }
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 80px; }
+      .wrapper .wy_we .container .wy_we__block .item_we {
+        width: 45%;
+        display: flex;
+        padding: 5px;
+        align-items: center; }
+        .wrapper .wy_we .container .wy_we__block .item_we:nth-child(n + 3) {
+          margin-top: 65px; }
+        .wrapper .wy_we .container .wy_we__block .item_we img {
+          width: 65px;
+          margin-right: 30px; }
+        .wrapper .wy_we .container .wy_we__block .item_we .item_we_desc h3 {
+          font-size: 22px;
+          font-family: "Helvetica Neue Cyr Bold", sans-serif;
+          margin-bottom: 18px; }
+        .wrapper .wy_we .container .wy_we__block .item_we .item_we_desc p {
+          font-size: 16px;
+          font-family: 'Helvetica Neue Cyr Thin', sans-serif; }
 .wrapper .reviews .container {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  padding: 75px 10px; }
+  .wrapper .reviews .container .reviews__block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 75px 0 50px; }
+    .wrapper .reviews .container .reviews__block .reviews__item {
+      width: 30%;
+      border: 1px solid grey;
+      padding: 10px 30px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; }
+      .wrapper .reviews .container .reviews__block .reviews__item img {
+        width: 120px;
+        position: relative;
+        top: -25px;
+        border-radius: 10px; }
+      .wrapper .reviews .container .reviews__block .reviews__item h3 {
+        color: #4a4e66;
+        font-size: 18px; }
+      .wrapper .reviews .container .reviews__block .reviews__item p.user_level {
+        font-style: italic;
+        color: #4a4e66;
+        margin-top: 10px; }
+      .wrapper .reviews .container .reviews__block .reviews__item p {
+        margin-top: 20px;
+        font-size: 16px;
+        font-family: 'Helvetica Neue Cyr Medium', sans-serif;
+        color: black; }
+  .wrapper .reviews .container a {
+    font-size: 20px;
+    font-family: "Helvetica Neue Cyr Bold", sans-serif;
+    color: #0165fb; }
 
 /*# sourceMappingURL=style.css.map */

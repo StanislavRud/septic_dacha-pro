@@ -451,6 +451,7 @@ header {
     }
   }
   .wy_we {
+    background: #f2f3f4;
     .container{
       display: flex;
       flex-direction: column;
@@ -499,11 +500,53 @@ header {
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 75px 10px;
       h2 {
 
       }
       .reviews__block {
-        
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 75px 0 50px;
+        .reviews__item {
+          width: 30%;
+          border: 1px solid grey;
+          padding: 10px 30px;
+          border-radius: 8px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          img {
+            width: 120px;
+            position: relative;
+            top: -25px;
+            border-radius: 10px;
+          }
+          h3 {
+            color: #4a4e66;
+            font-size: 18px;
+          }
+          p.user_level {
+            font-style: italic;
+            color: #4a4e66;
+            margin-top: 10px;
+          }
+
+          p {
+            margin-top: 20px;
+            font-size: 16px;
+            font-family: 'Helvetica Neue Cyr Medium', sans-serif;
+            color: black;
+          }
+        }
+      }
+      a {
+        font-size: 20px;
+        font-family: "Helvetica Neue Cyr Bold", sans-serif;
+        color: #0165fb;
       }
     }
   }
