@@ -513,7 +513,7 @@ header {
         .reviews__item {
           width: 30%;
           border: 1px solid grey;
-          padding: 10px 30px;
+          padding: 10px 30px 30px;
           border-radius: 8px;
           display: flex;
           flex-direction: column;
@@ -548,6 +548,97 @@ header {
         font-family: "Helvetica Neue Cyr Bold", sans-serif;
         color: #0165fb;
       }
+    }
+  }
+  .about_company {
+    background: #e8ecef;
+    .container {
+      padding: 80px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .about_company_desc {
+        margin: 60px 0;
+        display: flex;
+        width: 100%;
+        height: 300px;
+        .img_company {
+          width: 100%;
+          margin-right: 65px;
+          background: url("./../img/about_company.png") no-repeat center center;
+          background-size: cover;
+          border-radius: 10px;
+        }
+        .about_company_desc_text {
+          display: flex;
+          flex-direction: column;
+          .about_company__text1{
+            margin-bottom: 20px;
+          }
+          p {
+            line-height: 30px;
+            font-size: 18px;
+          }
+        }
+
+
+      }
+      button {
+        padding: 30px 60px;
+        border-radius: 8px;
+        background: #ff8400;
+        font-size: 22px;
+      }
+
+    }
+  }
+  .contacts {
+    .container {
+      padding-top: 75px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        margin-top: 24px;
+        font-size: 20px;
+        font-family: "Helvetica Neue Cyr Thin", sans-serif;
+      }
+      .contacts_block{
+        display: flex;
+        flex-direction: column;
+        padding: 45px;
+        border: 1px solid #e8e9ef;
+        border-radius: 10px;
+        line-height: 50px;
+        font-size: 18px;
+        margin-top: 60px;
+        background: white;
+        z-index: 1;
+        a {
+          text-decoration: none;
+          color: #4a4e66;
+          i {
+            margin-right: 25px;
+          }
+        }
+        .address {
+          display: flex;
+          align-items: center;
+          p {
+            color: #4a4e66;
+          }
+          img {
+            width: 25px;
+            display: inline-block;
+            color: #4a4e66;
+            margin-right: 25px;
+          }
+        }
+      }
+    }
+    .contacts_map {
+      position: relative;
+      top: -230px;
     }
   }
 }

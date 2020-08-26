@@ -379,7 +379,7 @@ header .header_bottom .container {
     .wrapper .reviews .container .reviews__block .reviews__item {
       width: 30%;
       border: 1px solid grey;
-      padding: 10px 30px;
+      padding: 10px 30px 30px;
       border-radius: 8px;
       display: flex;
       flex-direction: column;
@@ -406,5 +406,74 @@ header .header_bottom .container {
     font-size: 20px;
     font-family: "Helvetica Neue Cyr Bold", sans-serif;
     color: #0165fb; }
+.wrapper .about_company {
+  background: #e8ecef; }
+  .wrapper .about_company .container {
+    padding: 80px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .wrapper .about_company .container .about_company_desc {
+      margin: 60px 0;
+      display: flex;
+      width: 100%;
+      height: 300px; }
+      .wrapper .about_company .container .about_company_desc .img_company {
+        width: 100%;
+        margin-right: 65px;
+        background: url("./../img/about_company.png") no-repeat center center;
+        background-size: cover;
+        border-radius: 10px; }
+      .wrapper .about_company .container .about_company_desc .about_company_desc_text {
+        display: flex;
+        flex-direction: column; }
+        .wrapper .about_company .container .about_company_desc .about_company_desc_text .about_company__text1 {
+          margin-bottom: 20px; }
+        .wrapper .about_company .container .about_company_desc .about_company_desc_text p {
+          line-height: 30px;
+          font-size: 18px; }
+    .wrapper .about_company .container button {
+      padding: 30px 60px;
+      border-radius: 8px;
+      background: #ff8400;
+      font-size: 22px; }
+.wrapper .contacts .container {
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .wrapper .contacts .container h3 {
+    margin-top: 24px;
+    font-size: 20px;
+    font-family: "Helvetica Neue Cyr Thin", sans-serif; }
+  .wrapper .contacts .container .contacts_block {
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    border: 1px solid #e8e9ef;
+    border-radius: 10px;
+    line-height: 50px;
+    font-size: 18px;
+    margin-top: 60px;
+    background: white;
+    z-index: 1; }
+    .wrapper .contacts .container .contacts_block a {
+      text-decoration: none;
+      color: #4a4e66; }
+      .wrapper .contacts .container .contacts_block a i {
+        margin-right: 25px; }
+    .wrapper .contacts .container .contacts_block .address {
+      display: flex;
+      align-items: center; }
+      .wrapper .contacts .container .contacts_block .address p {
+        color: #4a4e66; }
+      .wrapper .contacts .container .contacts_block .address img {
+        width: 25px;
+        display: inline-block;
+        color: #4a4e66;
+        margin-right: 25px; }
+.wrapper .contacts .contacts_map {
+  position: relative;
+  top: -230px; }
 
 /*# sourceMappingURL=style.css.map */
