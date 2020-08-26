@@ -22,8 +22,14 @@
   src: url("./../fonts/HelveticaNeueCyr-Thin.eot?#iefix") format("embedded-opentype"), url("./../fonts/HelveticaNeueCyr-Thin.woff") format("woff"), url("./../fonts/HelveticaNeueCyr-Thin.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-h1, h2, h3, h4, p, a {
+h1, h3, h4, p, a {
   font-family: 'Helvetica Neue Cyr Medium'; }
+
+h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue Cyr Bold", sans-serif;
+  color: #4a4e66; }
 
 .container {
   max-width: 1161px;
@@ -139,9 +145,7 @@ header .header_bottom .container {
     flex-direction: column;
     align-items: center; }
     .wrapper .septics .container h2 {
-      font-weight: bold;
       color: orange;
-      text-transform: uppercase;
       margin: 65px 0 20px; }
     .wrapper .septics .container h3 {
       text-transform: uppercase;
