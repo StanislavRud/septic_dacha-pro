@@ -363,5 +363,9 @@ header .header_bottom .container {
       .wrapper .wy_we .container .wy_we__block .item_we .item_we_desc p {
         font-size: 16px;
         font-family: 'Helvetica Neue Cyr Thin', sans-serif; }
+.wrapper .reviews .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 /*# sourceMappingURL=style.css.map */
