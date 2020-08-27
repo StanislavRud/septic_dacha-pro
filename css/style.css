@@ -137,7 +137,26 @@ header .header_bottom .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    padding: 50px 10px; }
+    header .header_bottom .container .header_bottom_reklama .reklama_desc {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-around; }
+      header .header_bottom .container .header_bottom_reklama .reklama_desc .reklama_item {
+        display: flex;
+        flex-wrap: wrap; }
+        header .header_bottom .container .header_bottom_reklama .reklama_desc .reklama_item img {
+          margin-right: 25px;
+          width: 32px;
+          height: 32px; }
+        header .header_bottom .container .header_bottom_reklama .reklama_desc .reklama_item h3 {
+          color: #e8e9ef;
+          font-family: 'Helvetica Neue Cyr Medium', sans-serif; }
+        header .header_bottom .container .header_bottom_reklama .reklama_desc .reklama_item p {
+          color: #e8e9ef;
+          font-family: "Helvetica Neue Cyr Thin", sans-serif; }
 
 .wrapper .septics {
   background: #f2f3f4; }
@@ -439,7 +458,7 @@ header .header_bottom .container {
       background: #ff8400;
       font-size: 22px; }
 .wrapper .contacts .container {
-  padding-top: 75px;
+  padding: 75px 10px 50px;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -448,6 +467,7 @@ header .header_bottom .container {
     font-size: 20px;
     font-family: "Helvetica Neue Cyr Thin", sans-serif; }
   .wrapper .contacts .container .contacts_block {
+    position: absolute;
     display: flex;
     flex-direction: column;
     padding: 45px;
@@ -455,7 +475,7 @@ header .header_bottom .container {
     border-radius: 10px;
     line-height: 50px;
     font-size: 18px;
-    margin-top: 60px;
+    margin-top: 100px;
     background: white;
     z-index: 1; }
     .wrapper .contacts .container .contacts_block a {
@@ -473,39 +493,46 @@ header .header_bottom .container {
         display: inline-block;
         color: #4a4e66;
         margin-right: 25px; }
-.wrapper .contacts .contacts_map {
-  position: relative;
-  top: -230px; }
 
 footer {
   background: #4a4e66; }
   footer .container {
-    padding: 50px 0; }
-    footer .container .main_menu {
-      margin-top: 10px; }
-      footer .container .main_menu ul {
-        display: flex;
-        list-style: none;
-        justify-content: space-between; }
-        footer .container .main_menu ul li a {
-          text-decoration: none;
-          color: white;
-          font-size: 17px;
-          transition: all 0.2s; }
-          footer .container .main_menu ul li a:hover {
-            color: #f2f3f4; }
+    padding: 50px 10px; }
+    footer .container .main_menu ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-between; }
+      footer .container .main_menu ul li a {
+        text-decoration: none;
+        font-family: "Helvetica Neue Cyr Thin", sans-serif;
+        color: white;
+        font-size: 17px;
+        transition: all 0.2s; }
+        footer .container .main_menu ul li a:hover {
+          color: #f2f3f4; }
     footer .container .logo_addr {
       margin-top: 65px;
       display: flex;
       align-items: center;
       justify-content: space-between; }
+      footer .container .logo_addr button {
+        padding: 20px 60px;
+        border-radius: 8px;
+        background: #ff8400;
+        font-size: 22px; }
       footer .container .logo_addr .address {
-        display: flex; }
+        display: flex;
+        align-items: center; }
         footer .container .logo_addr .address img {
           margin-right: 65px;
           height: 45px; }
         footer .container .logo_addr .address .address_contact {
           display: flex;
-          flex-direction: column; }
+          flex-direction: column;
+          line-height: 25px; }
+          footer .container .logo_addr .address .address_contact a {
+            text-decoration: none;
+            color: #e8e9ef;
+            font-family: "Helvetica Neue Cyr Thin", sans-serif; }
 
 /*# sourceMappingURL=style.css.map */
