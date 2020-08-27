@@ -39,7 +39,8 @@ h2 {
 button.podobrat {
   border: none;
   background: orange;
-  color: white; }
+  color: white;
+  cursor: pointer; }
 
 header .header_top {
   background: #f2f3f4; }
@@ -475,5 +476,36 @@ header .header_bottom .container {
 .wrapper .contacts .contacts_map {
   position: relative;
   top: -230px; }
+
+footer {
+  background: #4a4e66; }
+  footer .container {
+    padding: 50px 0; }
+    footer .container .main_menu {
+      margin-top: 10px; }
+      footer .container .main_menu ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between; }
+        footer .container .main_menu ul li a {
+          text-decoration: none;
+          color: white;
+          font-size: 17px;
+          transition: all 0.2s; }
+          footer .container .main_menu ul li a:hover {
+            color: #f2f3f4; }
+    footer .container .logo_addr {
+      margin-top: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      footer .container .logo_addr .address {
+        display: flex; }
+        footer .container .logo_addr .address img {
+          margin-right: 65px;
+          height: 45px; }
+        footer .container .logo_addr .address .address_contact {
+          display: flex;
+          flex-direction: column; }
 
 /*# sourceMappingURL=style.css.map */

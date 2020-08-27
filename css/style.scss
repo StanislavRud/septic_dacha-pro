@@ -49,6 +49,7 @@ h2 {
 }
 
 
+
 .container {
   max-width: 1161px;
   margin: 0 auto;
@@ -59,6 +60,7 @@ button.podobrat {
   border: none;
   background: orange;
   color: white;
+  cursor: pointer;
 }
 
 header {
@@ -639,6 +641,48 @@ header {
     .contacts_map {
       position: relative;
       top: -230px;
+    }
+  }
+}
+footer {
+  background: #4a4e66;
+  .container {
+    padding: 50px 0;
+    .main_menu {
+      margin-top: 10px;
+      ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        li {
+          a {
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+            transition: all 0.2s;
+            &:hover {
+              color: #f2f3f4;
+            }
+          }
+        }
+      }
+    }
+    .logo_addr {
+      margin-top: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .address {
+        display: flex;
+        img {
+          margin-right: 65px;
+          height: 45px;
+        }
+        .address_contact {
+          display: flex;
+          flex-direction: column;
+        }
+      }
     }
   }
 }
