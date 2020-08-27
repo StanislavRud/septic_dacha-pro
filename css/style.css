@@ -31,19 +31,37 @@ h2 {
   font-family: "Helvetica Neue Cyr Bold", sans-serif;
   color: #4a4e66; }
 
+a.more {
+  font-size: 20px;
+  font-family: "Helvetica Neue Cyr Bold", sans-serif;
+  color: #0165fb;
+  text-decoration: none;
+  /* Убираем подчеркивание */
+  border-bottom: dashed; }
+
 .container {
   max-width: 1161px;
   margin: 0 auto;
   padding: 10px; }
 
+.circle {
+  width: 45px;
+  height: 22px;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  position: relative; }
+
 button.podobrat {
   border: none;
-  background: orange;
+  background: #ff8400;
   color: white;
-  cursor: pointer; }
+  cursor: pointer;
+  padding: 20px 60px;
+  border-radius: 8px;
+  font-size: 22px;
+  outline: none; }
 
 header .header_top {
-  background: #f2f3f4; }
+  background: #e8e9ef; }
   header .header_top .container {
     display: flex;
     align-items: center;
@@ -60,7 +78,7 @@ header .header_top {
       color: black;
       font-weight: bold; }
 header .main_desc {
-  background: url("./../img/bg-header.png") no-repeat center center;
+  background: url("./../img/head.png") no-repeat center center;
   background-size: cover; }
   header .main_desc .container .main_menu {
     margin-top: 10px; }
@@ -72,46 +90,47 @@ header .main_desc {
         text-decoration: none;
         color: white;
         font-size: 17px;
-        transition: all 0.2s; }
+        transition: all 0.2s;
+        font-family: 'Helvetica Neue Cyr Thin', sans-serif; }
         header .main_desc .container .main_menu ul li a:hover {
-          color: #f2f3f4; }
+          font-weight: bold; }
   header .main_desc .container .main_desc_text {
     width: 50%; }
     header .main_desc .container .main_desc_text h1 {
       text-transform: uppercase;
       margin: 62px 0;
-      color: white;
+      color: #ffffff;
       font-size: 55px; }
     header .main_desc .container .main_desc_text h3 {
       font-size: 20px;
       padding: 13px 30px 13px 25px;
       margin-top: 10px;
       display: inline-block;
-      background: #f2f3f4;
+      background: #ffffff;
       border-radius: 5px; }
+      header .main_desc .container .main_desc_text h3 span {
+        color: #209F01; }
     header .main_desc .container .main_desc_text .text {
-      margin-top: 50px;
+      margin-top: 110px;
       font-size: 28px;
       color: #FFFFFF;
       width: 339px;
       text-align: right; }
   header .main_desc .container button.header_button.podobrat {
-    width: 301px;
-    height: 73px;
     border: none;
     border-radius: 5px;
-    background: #FF8400;
+    background: #ff8400;
     color: #FFFFFF;
     position: relative;
-    left: calc(50% - 55px);
-    bottom: 35px;
+    left: calc(50% - 100px);
+    bottom: 80px;
     font-size: 22px; }
 header .header_bottom .container {
+  padding-bottom: 58px;
   display: flex;
   align-items: center;
   flex-direction: column; }
   header .header_bottom .container .header_bottom_block {
-    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -119,16 +138,14 @@ header .header_bottom .container {
     width: 100%; }
     header .header_bottom .container .header_bottom_block .header_bottom_desc {
       display: flex;
-      padding: 10px;
-      width: 25%; }
+      padding: 5px;
+      align-items: center; }
       header .header_bottom .container .header_bottom_block .header_bottom_desc .image {
         margin-right: 20px;
         height: 80px;
-        width: 80px;
-        background: url("./../img/peoples.png") no-repeat center center;
-        background-size: contain; }
+        width: 80px; }
   header .header_bottom .container .header_bottom_reklama {
-    margin: 60px 0 70px;
+    margin-top: 60px;
     border-radius: 10px;
     width: 100%;
     height: 241px;
@@ -152,80 +169,90 @@ header .header_bottom .container {
           width: 32px;
           height: 32px; }
         header .header_bottom .container .header_bottom_reklama .reklama_desc .reklama_item h3 {
-          color: #e8e9ef;
+          color: white;
           font-family: 'Helvetica Neue Cyr Medium', sans-serif; }
         header .header_bottom .container .header_bottom_reklama .reklama_desc .reklama_item p {
-          color: #e8e9ef;
+          color: white;
           font-family: "Helvetica Neue Cyr Thin", sans-serif; }
+  header .header_bottom .container .circle {
+    background: white;
+    top: 77px; }
 
 .wrapper .septics {
-  background: #f2f3f4; }
+  background: #e8e9ef; }
   .wrapper .septics .container {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    padding: 65px 10px 18px; }
     .wrapper .septics .container h2 {
-      color: orange;
-      margin: 65px 0 20px; }
+      color: #ff8400;
+      margin-bottom: 20px; }
     .wrapper .septics .container h3 {
       text-transform: uppercase;
       font-weight: normal; }
-.wrapper .septics_sale {
-  margin: 50px 0 65px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 40px; }
-  .wrapper .septics_sale .septic {
-    justify-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 85%;
-    padding: 5px; }
-    .wrapper .septics_sale .septic h3 {
-      font-weight: bold;
-      font-size: 24px;
-      margin-bottom: 20px; }
-    .wrapper .septics_sale .septic .septic_desc {
-      margin: 20px 0; }
-      .wrapper .septics_sale .septic .septic_desc p {
-        color: #209F01; }
-    .wrapper .septics_sale .septic button.podobrat {
+    .wrapper .septics .container .septics_sale {
+      margin: 50px 0 65px;
       width: 100%;
-      height: 55px;
-      border-radius: 10px;
-      font-size: 22px;
-      background: #FF8400; }
-    .wrapper .septics_sale .septic .septic_img {
-      width: 100%;
-      height: 200px; }
-    .wrapper .septics_sale .septic .septic_img.img1 {
-      background: url("./../img/twer.jpg") no-repeat center center;
-      background-size: contain; }
-    .wrapper .septics_sale .septic .septic_img.img2 {
-      background: url("./../img/eurolos.jpg") no-repeat center center;
-      background-size: contain; }
-    .wrapper .septics_sale .septic .septic_img.img3 {
-      background: url("./../img/topas.png") no-repeat center center;
-      background-size: contain; }
-    .wrapper .septics_sale .septic .septic_img.img4 {
-      background: url("./../img/deka.png") no-repeat center center;
-      background-size: contain; }
-    .wrapper .septics_sale .septic .septic_img.img5 {
-      background: url("./../img/zore.png") no-repeat center center;
-      background-size: contain; }
-    .wrapper .septics_sale .septic .septic_img.img6 {
-      background: url("./../img/septix_hz.png") no-repeat center center; }
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 40px; }
+      .wrapper .septics .container .septics_sale .septic {
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+        padding: 5px; }
+        .wrapper .septics .container .septics_sale .septic h3 {
+          font-weight: bold;
+          font-size: 24px;
+          margin-bottom: 20px; }
+        .wrapper .septics .container .septics_sale .septic .septic_desc {
+          margin: 20px 0;
+          font-size: 20px;
+          text-align: center; }
+          .wrapper .septics .container .septics_sale .septic .septic_desc h4 {
+            font-family: "Helvetica Neue Cyr Bold", sans-serif; }
+          .wrapper .septics .container .septics_sale .septic .septic_desc p {
+            color: #209F01;
+            font-family: "Helvetica Neue Cyr Bold", sans-serif; }
+        .wrapper .septics .container .septics_sale .septic button.podobrat {
+          width: 100%;
+          border-radius: 10px; }
+        .wrapper .septics .container .septics_sale .septic .septic_img {
+          width: 100%;
+          height: 200px; }
+        .wrapper .septics .container .septics_sale .septic .septic_img.img1 {
+          background: url("./../img/twer.png") no-repeat center center;
+          background-size: contain; }
+        .wrapper .septics .container .septics_sale .septic .septic_img.img2 {
+          background: url("./../img/eurolos.png") no-repeat center center;
+          background-size: contain; }
+        .wrapper .septics .container .septics_sale .septic .septic_img.img3 {
+          background: url("./../img/topas.png") no-repeat center center;
+          background-size: contain; }
+        .wrapper .septics .container .septics_sale .septic .septic_img.img4 {
+          background: url("./../img/deka.png") no-repeat center center;
+          background-size: contain; }
+        .wrapper .septics .container .septics_sale .septic .septic_img.img5 {
+          background: url("./../img/zore.png") no-repeat center center;
+          background-size: contain; }
+        .wrapper .septics .container .septics_sale .septic .septic_img.img6 {
+          background: url("./../img/septix_hz.png") no-repeat center center; }
+    .wrapper .septics .container .circle {
+      top: 40px;
+      background: #e8e9ef; }
 .wrapper .smeta .container {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  padding: 80px 10px; }
   .wrapper .smeta .container h2 {
     font-size: 32px;
     text-transform: uppercase;
-    margin: 70px 0 20px; }
+    margin-bottom: 20px; }
   .wrapper .smeta .container h3 {
     font-family: 'Helvetica Neue Cyr Thin';
     font-size: 20px;
@@ -264,8 +291,8 @@ header .header_bottom .container {
         border-collapse: collapse;
         width: 100%;
         height: 100%; }
-        .wrapper .smeta .container .smeta_block .smeta_block__smeta table thead {
-          height: 64px; }
+        .wrapper .smeta .container .smeta_block .smeta_block__smeta table thead tr {
+          height: 50px; }
         .wrapper .smeta .container .smeta_block .smeta_block__smeta table th, .wrapper .smeta .container .smeta_block .smeta_block__smeta table td {
           border: 1px solid grey;
           width: 95px;
@@ -274,11 +301,41 @@ header .header_bottom .container {
         .wrapper .smeta .container .smeta_block .smeta_block__smeta table td[data-label="Наим-е работ/материалов"] {
           padding-left: 20px;
           width: 250px; }
+  .wrapper .smeta .container a {
+    margin: 50px 0; }
+  .wrapper .smeta .container .gus {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #e8e9ef;
+    border-radius: 10px; }
+    .wrapper .smeta .container .gus img {
+      height: 100%; }
+    .wrapper .smeta .container .gus .gus_desc {
+      display: flex;
+      width: 50%;
+      flex-direction: column; }
+      .wrapper .smeta .container .gus .gus_desc h3 {
+        font-size: 20px;
+        color: #209F01;
+        font-family: "Helvetica Neue Cyr Bold", sans-serif;
+        margin-bottom: 20px; }
+        .wrapper .smeta .container .gus .gus_desc h3 span {
+          color: #4a4e66; }
+      .wrapper .smeta .container .gus .gus_desc p {
+        line-height: 25px;
+        font-family: 'Helvetica Neue Cyr', sans-serif;
+        color: #4a4e66; }
+    .wrapper .smeta .container .gus button {
+      padding: 20px 30px;
+      background: #209F01; }
 .wrapper .our_objects .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 10px 60px; }
+  padding: 80px 10px 38px; }
   .wrapper .our_objects .container h2 {
     text-transform: uppercase;
     font-size: 32px; }
@@ -289,7 +346,7 @@ header .header_bottom .container {
     align-items: center;
     justify-content: space-between; }
     .wrapper .our_objects .container .our_objects__block .object {
-      background: #f2f3f4;
+      background: #e8e9ef;
       padding: 18px 0 20px;
       border-radius: 8px; }
       .wrapper .our_objects .container .our_objects__block .object img {
@@ -309,8 +366,11 @@ header .header_bottom .container {
     font-size: 22px;
     font-family: 'Helvetica Neue Cyr Medium', sans-serif;
     background: #ff8400; }
+  .wrapper .our_objects .container .circle {
+    background: white;
+    top: 60px; }
 .wrapper .questions {
-  background: #f2f3f4; }
+  background: #e8e9ef; }
   .wrapper .questions .container {
     display: flex;
     flex-direction: column;
@@ -353,12 +413,12 @@ header .header_bottom .container {
         border-top: none;
         border-bottom: 10px solid #FF8400; }
 .wrapper .wy_we {
-  background: #f2f3f4; }
+  background: #e8e9ef; }
   .wrapper .wy_we .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 0; }
+    padding: 80px 0 58px; }
     .wrapper .wy_we .container h2 {
       text-transform: uppercase;
       font-family: "Helvetica Neue Cyr Bold"; }
@@ -385,11 +445,14 @@ header .header_bottom .container {
         .wrapper .wy_we .container .wy_we__block .item_we .item_we_desc p {
           font-size: 16px;
           font-family: 'Helvetica Neue Cyr Thin', sans-serif; }
+    .wrapper .wy_we .container .circle {
+      background: #e8e9ef;
+      top: 80px; }
 .wrapper .reviews .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 75px 10px; }
+  padding: 75px 10px 53px; }
   .wrapper .reviews .container .reviews__block {
     display: flex;
     justify-content: space-between;
@@ -426,10 +489,13 @@ header .header_bottom .container {
     font-size: 20px;
     font-family: "Helvetica Neue Cyr Bold", sans-serif;
     color: #0165fb; }
+  .wrapper .reviews .container .circle {
+    background: white;
+    top: 75px; }
 .wrapper .about_company {
   background: #e8ecef; }
   .wrapper .about_company .container {
-    padding: 80px 10px;
+    padding: 80px 10px 58px;
     display: flex;
     flex-direction: column;
     align-items: center; }
@@ -457,6 +523,9 @@ header .header_bottom .container {
       border-radius: 8px;
       background: #ff8400;
       font-size: 22px; }
+    .wrapper .about_company .container .circle {
+      background: #e8e9ef;
+      top: 80px; }
 .wrapper .contacts .container {
   padding: 75px 10px 50px;
   display: flex;
@@ -509,7 +578,7 @@ footer {
         font-size: 17px;
         transition: all 0.2s; }
         footer .container .main_menu ul li a:hover {
-          color: #f2f3f4; }
+          font-weight: bold; }
     footer .container .logo_addr {
       margin-top: 65px;
       display: flex;
