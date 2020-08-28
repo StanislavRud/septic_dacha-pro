@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'Helvetica Neue Cyr Bold';
   src: url('./../fonts/HelveticaNeueCyr-Bold.eot');
@@ -38,7 +42,7 @@
 
 
 h1, h3, h4, p, a {
-  font-family: 'Helvetica Neue Cyr Medium';
+  font-family: 'Helvetica Neue Cyr Medium', sans-serif;
 }
 
 h2 {
@@ -71,8 +75,8 @@ a.more {
 
 button.podobrat {
   border: none;
-  background: #ff8400;
-  color: white;
+  background: #ffde3b;
+  color: black;
   cursor: pointer;
   padding: 20px 60px;
   border-radius: 8px;
@@ -93,8 +97,10 @@ header {
         flex-direction: column;
         height: 100%;
         img {
-          width: 200px;
-          height: 45px;
+          width: 100%;
+        }
+        p {
+          margin-top: 8px;
         }
       }
       a {
@@ -161,8 +167,8 @@ header {
         //height: 73px;
         border: none;
         border-radius: 5px;
-        background: #ff8400;
-        color: #FFFFFF;
+        background: #ffde3b;
+        color: black;
         position: relative;
         left: calc(50% - 100px);
         bottom: 80px;
@@ -373,7 +379,7 @@ header {
             width: 100%;
             height: 62px;
             border-radius: 8px;
-            background: #209F01;
+            background: #ffde3b;
             font-size: 22px;
             font-family: 'Helvetica Neue Cyr Medium', sans-serif;
           }
@@ -442,11 +448,12 @@ header {
         }
         button {
           padding: 20px 30px;
-          background: #209F01;
+          background: #ffde3b;
         }
       }
     }
   }
+
   .our_objects {
     .container {
       display: flex;
@@ -488,7 +495,7 @@ header {
         border-radius: 8px;
         font-size: 22px;
         font-family: 'Helvetica Neue Cyr Medium', sans-serif;
-        background: #ff8400;
+        background: #ffde3b;
       }
       .circle {
         background: white;
@@ -496,6 +503,7 @@ header {
       }
     }
   }
+
   .questions {
     background: #e8e9ef;
     .container {
@@ -509,53 +517,216 @@ header {
       }
       .questions_block {
         width: 100%;
-          .item {
-            .title {
-              background: white;
-              color: black;
-              text-decoration: none;
-              text-transform: uppercase;
-              cursor: pointer;
-              display: flex;
-              padding: 20px;
-              align-items: center;
-              justify-content: space-between;
-              .icon {
-                position: relative;
-                width: 14px;
-                &:after {
-                  content: "";
-                  border: 8px solid transparent;
-                  border-top: 10px solid grey;
-                  position: absolute;
-                }
+        .tab {
+          border-radius: 3px; /* Скругляем уголки */
+          margin-bottom: 10px; /* Расстояние между пунктами */
+
+          .tab-title {
+            font-family: 'Helvetica Neue Cyr Bold', sans-serif;
+            background: white;
+            color: black;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            justify-content: space-between;
+            .icon_menu {
+              position: relative;
+              width: 14px;
+              &:after {
+                content: "";
+                border: 8px solid transparent;
+                border-top: 10px solid grey;
+                position: absolute;
               }
-
-
-            }
-            p {
-              height: 0;
-              opacity: 0;
-              margin: 6px 0;
-            }
-            &:target p {
-              height: auto;
-              opacity: 1;
-              padding: 20px;
-
-            }
-            &:target a {
-              color: #FF8400;
-            }
-            &:target .icon:after {
-              border-top: none;
-              border-bottom: 10px solid #FF8400;
             }
 
           }
+          .tab-content {
+            height: 0;
+            opacity: 0;
+            transition: .1s all linear;
+            font-family: 'Helvetica Neue Cyr', sans-serif;
+            line-height: 22px;
+          }
+          input {
+            display: none;
+
+            &:checked ~ .tab-content {
+              height: 100%;
+              opacity: 1;
+              padding: 20px;
+            }
+            &:checked ~ .tab-title  {
+              color: #FF8400;
+              .icon_menu:after {
+                border-top: none;
+                border-bottom: 10px solid #FF8400;
+              }
+            }
+            &:checked ~ .tab-content {
+              height: auto;
+              opacity: 1;
+              padding: 20px;
+            }
+          }
+
+
+        }
+
+      }
+      .circle {
+        top: 100px;
+        background: #e8e9ef;
       }
     }
   }
+
+  .garanties {
+    .container {
+      padding: 80px 10px 90px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .garanties_head{
+        display: flex;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background: url("./../img/bg_gar_head.png") no-repeat center center;
+        background-size: cover;
+        padding: 50px 60px 50px 80px;
+        img {
+          width: 114px;
+          height: 100%;
+        }
+        .garanties_head__text {
+          display: flex;
+          flex-direction: column;
+          width: 45%;
+          h2 {
+            font-size: 52px;
+            color: white;
+            text-transform: none;
+          }
+
+          h3 {
+            color: white;
+            margin-top: 8px;
+            font-family: 'Helvetica Neue Cyr', sans-serif;
+          }
+          p {
+            margin-top: 15px;
+            font-family: "Helvetica Neue Cyr Thin", sans-serif;
+            color: white;
+          }
+        }
+        .garanties_head__button {
+          display: flex;
+          flex-direction: column;
+          font-size: 22px;
+          font-family: 'Helvetica Neue Cyr Medium', sans-serif;
+          input {
+            padding: 20px 25px;
+            border: none;
+            border-radius: 8px;
+            align-items: center;
+            color: #4a4e66;
+            font-size: 20px;
+          }
+          a {
+            text-align: center;
+            padding: 20px 25px;
+            background: #ffde3b;
+            font-size: 22px;
+            border: none;
+            border-radius: 8px;
+            align-items: center;
+            margin-top: 15px;
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+      .garanties_wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 0;
+        .garanties_wrap__desc {
+          width: 100%;
+          display: flex;
+          margin-top: 60px;
+          img {
+            width: 50%;
+            border-radius: 8px;
+          }
+          .garanties_wrap__text {
+            justify-content: space-between;
+            padding: 20px 0 0 50px;
+            display: flex;
+            flex-direction: column;
+            p {
+              font-family: "Helvetica Neue Cyr", sans-serif;
+              font-size: 18px;
+              span {
+                font-weight: bold;
+              }
+            }
+            button {
+              width: max-content;
+              background: #209F01;
+              position: relative;
+              right: -40%;
+            }
+          }
+        }
+      }
+      .pechat {
+        position: absolute;
+        width: 180px;
+        height: 170px;
+        margin-top: 40%;
+        left: 45%;
+      }
+      .garanties_bottom{
+        .garanties_bottom__blocks {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          margin-top: 50px;
+          .block {
+            width: 32%;
+            border-radius: 10px;
+            padding: 35px 45px;
+            padding-bottom: 0;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h3 {
+              font-family: 'Helvetica Neue Cyr', sans-serif;
+              font-size: 24px;
+            }
+          }
+          .bl_1, .bl_3 {
+            background: #FF8400;
+          }
+          .bl_2 {
+            background: #42ac28;
+          }
+        }
+      }
+      .circle {
+        background: white;
+        top: 112px;
+      }
+    }
+  }
+
   .wy_we {
     background: #e8e9ef;
     .container{
@@ -590,11 +761,6 @@ header {
             h3 {
               font-size: 22px;
               font-family: "Helvetica Neue Cyr Bold", sans-serif;
-              margin-bottom: 18px;
-            }
-            p {
-              font-size: 16px;
-              font-family: 'Helvetica Neue Cyr Thin', sans-serif;
             }
           }
         }
@@ -648,7 +814,7 @@ header {
           p {
             margin-top: 20px;
             font-size: 16px;
-            font-family: 'Helvetica Neue Cyr Medium', sans-serif;
+            font-family: 'Helvetica Neue Cyr', sans-serif;
             color: black;
           }
         }
@@ -692,6 +858,7 @@ header {
           p {
             line-height: 30px;
             font-size: 18px;
+            font-family: 'Helvetica Neue Cyr', sans-serif;
           }
         }
 
@@ -700,7 +867,7 @@ header {
       button {
         padding: 30px 60px;
         border-radius: 8px;
-        background: #ff8400;
+        background: #ffde3b;
         font-size: 22px;
       }
       .circle {
@@ -789,7 +956,7 @@ footer {
       button {
         padding: 20px 60px;
         border-radius: 8px;
-        background: #ff8400;
+        background: #ffde3b;
         font-size: 22px;
       }
       .address {

@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0; }
 
+html {
+  scroll-behavior: smooth; }
+
 @font-face {
   font-family: 'Helvetica Neue Cyr Bold';
   src: url("./../fonts/HelveticaNeueCyr-Bold.eot");
@@ -23,7 +26,7 @@
   font-weight: normal;
   font-style: normal; }
 h1, h3, h4, p, a {
-  font-family: 'Helvetica Neue Cyr Medium'; }
+  font-family: 'Helvetica Neue Cyr Medium', sans-serif; }
 
 h2 {
   font-size: 32px;
@@ -52,8 +55,8 @@ a.more {
 
 button.podobrat {
   border: none;
-  background: #ff8400;
-  color: white;
+  background: #ffde3b;
+  color: black;
   cursor: pointer;
   padding: 20px 60px;
   border-radius: 8px;
@@ -71,8 +74,9 @@ header .header_top {
       flex-direction: column;
       height: 100%; }
       header .header_top .container .logo img {
-        width: 200px;
-        height: 45px; }
+        width: 100%; }
+      header .header_top .container .logo p {
+        margin-top: 8px; }
     header .header_top .container a {
       text-decoration: none;
       color: black;
@@ -119,8 +123,8 @@ header .main_desc {
   header .main_desc .container button.header_button.podobrat {
     border: none;
     border-radius: 5px;
-    background: #ff8400;
-    color: #FFFFFF;
+    background: #ffde3b;
+    color: black;
     position: relative;
     left: calc(50% - 100px);
     bottom: 80px;
@@ -280,7 +284,7 @@ header .header_bottom .container {
         width: 100%;
         height: 62px;
         border-radius: 8px;
-        background: #209F01;
+        background: #ffde3b;
         font-size: 22px;
         font-family: 'Helvetica Neue Cyr Medium', sans-serif; }
     .wrapper .smeta .container .smeta_block .smeta_block__smeta {
@@ -330,7 +334,7 @@ header .header_bottom .container {
         color: #4a4e66; }
     .wrapper .smeta .container .gus button {
       padding: 20px 30px;
-      background: #209F01; }
+      background: #ffde3b; }
 .wrapper .our_objects .container {
   display: flex;
   flex-direction: column;
@@ -365,7 +369,7 @@ header .header_bottom .container {
     border-radius: 8px;
     font-size: 22px;
     font-family: 'Helvetica Neue Cyr Medium', sans-serif;
-    background: #ff8400; }
+    background: #ffde3b; }
   .wrapper .our_objects .container .circle {
     background: white;
     top: 60px; }
@@ -381,37 +385,167 @@ header .header_bottom .container {
       margin-bottom: 60px; }
     .wrapper .questions .container .questions_block {
       width: 100%; }
-      .wrapper .questions .container .questions_block .item .title {
-        background: white;
-        color: black;
-        text-decoration: none;
-        text-transform: uppercase;
-        cursor: pointer;
-        display: flex;
-        padding: 20px;
+      .wrapper .questions .container .questions_block .tab {
+        border-radius: 3px;
+        /* Скругляем уголки */
+        margin-bottom: 10px;
+        /* Расстояние между пунктами */ }
+        .wrapper .questions .container .questions_block .tab .tab-title {
+          font-family: 'Helvetica Neue Cyr Bold', sans-serif;
+          background: white;
+          color: black;
+          text-transform: uppercase;
+          cursor: pointer;
+          display: flex;
+          padding: 20px;
+          align-items: center;
+          justify-content: space-between; }
+          .wrapper .questions .container .questions_block .tab .tab-title .icon_menu {
+            position: relative;
+            width: 14px; }
+            .wrapper .questions .container .questions_block .tab .tab-title .icon_menu:after {
+              content: "";
+              border: 8px solid transparent;
+              border-top: 10px solid grey;
+              position: absolute; }
+        .wrapper .questions .container .questions_block .tab .tab-content {
+          height: 0;
+          opacity: 0;
+          transition: .1s all linear;
+          font-family: 'Helvetica Neue Cyr', sans-serif;
+          line-height: 22px; }
+        .wrapper .questions .container .questions_block .tab input {
+          display: none; }
+          .wrapper .questions .container .questions_block .tab input:checked ~ .tab-content {
+            height: 100%;
+            opacity: 1;
+            padding: 20px; }
+          .wrapper .questions .container .questions_block .tab input:checked ~ .tab-title {
+            color: #FF8400; }
+            .wrapper .questions .container .questions_block .tab input:checked ~ .tab-title .icon_menu:after {
+              border-top: none;
+              border-bottom: 10px solid #FF8400; }
+          .wrapper .questions .container .questions_block .tab input:checked ~ .tab-content {
+            height: auto;
+            opacity: 1;
+            padding: 20px; }
+    .wrapper .questions .container .circle {
+      top: 100px;
+      background: #e8e9ef; }
+.wrapper .garanties .container {
+  padding: 80px 10px 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .wrapper .garanties .container .garanties_head {
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: url("./../img/bg_gar_head.png") no-repeat center center;
+    background-size: cover;
+    padding: 50px 60px 50px 80px; }
+    .wrapper .garanties .container .garanties_head img {
+      width: 114px;
+      height: 100%; }
+    .wrapper .garanties .container .garanties_head .garanties_head__text {
+      display: flex;
+      flex-direction: column;
+      width: 45%; }
+      .wrapper .garanties .container .garanties_head .garanties_head__text h2 {
+        font-size: 52px;
+        color: white;
+        text-transform: none; }
+      .wrapper .garanties .container .garanties_head .garanties_head__text h3 {
+        color: white;
+        margin-top: 8px;
+        font-family: 'Helvetica Neue Cyr', sans-serif; }
+      .wrapper .garanties .container .garanties_head .garanties_head__text p {
+        margin-top: 15px;
+        font-family: "Helvetica Neue Cyr Thin", sans-serif;
+        color: white; }
+    .wrapper .garanties .container .garanties_head .garanties_head__button {
+      display: flex;
+      flex-direction: column;
+      font-size: 22px;
+      font-family: 'Helvetica Neue Cyr Medium', sans-serif; }
+      .wrapper .garanties .container .garanties_head .garanties_head__button input {
+        padding: 20px 25px;
+        border: none;
+        border-radius: 8px;
         align-items: center;
-        justify-content: space-between; }
-        .wrapper .questions .container .questions_block .item .title .icon {
+        color: #4a4e66;
+        font-size: 20px; }
+      .wrapper .garanties .container .garanties_head .garanties_head__button a {
+        text-align: center;
+        padding: 20px 25px;
+        background: #ffde3b;
+        font-size: 22px;
+        border: none;
+        border-radius: 8px;
+        align-items: center;
+        margin-top: 15px;
+        text-decoration: none;
+        color: black; }
+  .wrapper .garanties .container .garanties_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0; }
+    .wrapper .garanties .container .garanties_wrap .garanties_wrap__desc {
+      width: 100%;
+      display: flex;
+      margin-top: 60px; }
+      .wrapper .garanties .container .garanties_wrap .garanties_wrap__desc img {
+        width: 50%;
+        border-radius: 8px; }
+      .wrapper .garanties .container .garanties_wrap .garanties_wrap__desc .garanties_wrap__text {
+        justify-content: space-between;
+        padding: 20px 0 0 50px;
+        display: flex;
+        flex-direction: column; }
+        .wrapper .garanties .container .garanties_wrap .garanties_wrap__desc .garanties_wrap__text p {
+          font-family: "Helvetica Neue Cyr", sans-serif;
+          font-size: 18px; }
+          .wrapper .garanties .container .garanties_wrap .garanties_wrap__desc .garanties_wrap__text p span {
+            font-weight: bold; }
+        .wrapper .garanties .container .garanties_wrap .garanties_wrap__desc .garanties_wrap__text button {
+          width: max-content;
+          background: #209F01;
           position: relative;
-          width: 14px; }
-          .wrapper .questions .container .questions_block .item .title .icon:after {
-            content: "";
-            border: 8px solid transparent;
-            border-top: 10px solid grey;
-            position: absolute; }
-      .wrapper .questions .container .questions_block .item p {
-        height: 0;
-        opacity: 0;
-        margin: 6px 0; }
-      .wrapper .questions .container .questions_block .item:target p {
-        height: auto;
-        opacity: 1;
-        padding: 20px; }
-      .wrapper .questions .container .questions_block .item:target a {
-        color: #FF8400; }
-      .wrapper .questions .container .questions_block .item:target .icon:after {
-        border-top: none;
-        border-bottom: 10px solid #FF8400; }
+          right: -40%; }
+  .wrapper .garanties .container .pechat {
+    position: absolute;
+    width: 180px;
+    height: 170px;
+    margin-top: 40%;
+    left: 45%; }
+  .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px; }
+    .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks .block {
+      width: 32%;
+      border-radius: 10px;
+      padding: 35px 45px;
+      padding-bottom: 0;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks .block h3 {
+        font-family: 'Helvetica Neue Cyr', sans-serif;
+        font-size: 24px; }
+    .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks .bl_1, .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks .bl_3 {
+      background: #FF8400; }
+    .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks .bl_2 {
+      background: #42ac28; }
+  .wrapper .garanties .container .circle {
+    background: white;
+    top: 112px; }
 .wrapper .wy_we {
   background: #e8e9ef; }
   .wrapper .wy_we .container {
@@ -440,11 +574,7 @@ header .header_bottom .container {
           margin-right: 30px; }
         .wrapper .wy_we .container .wy_we__block .item_we .item_we_desc h3 {
           font-size: 22px;
-          font-family: "Helvetica Neue Cyr Bold", sans-serif;
-          margin-bottom: 18px; }
-        .wrapper .wy_we .container .wy_we__block .item_we .item_we_desc p {
-          font-size: 16px;
-          font-family: 'Helvetica Neue Cyr Thin', sans-serif; }
+          font-family: "Helvetica Neue Cyr Bold", sans-serif; }
     .wrapper .wy_we .container .circle {
       background: #e8e9ef;
       top: 80px; }
@@ -483,7 +613,7 @@ header .header_bottom .container {
       .wrapper .reviews .container .reviews__block .reviews__item p {
         margin-top: 20px;
         font-size: 16px;
-        font-family: 'Helvetica Neue Cyr Medium', sans-serif;
+        font-family: 'Helvetica Neue Cyr', sans-serif;
         color: black; }
   .wrapper .reviews .container a {
     font-size: 20px;
@@ -517,11 +647,12 @@ header .header_bottom .container {
           margin-bottom: 20px; }
         .wrapper .about_company .container .about_company_desc .about_company_desc_text p {
           line-height: 30px;
-          font-size: 18px; }
+          font-size: 18px;
+          font-family: 'Helvetica Neue Cyr', sans-serif; }
     .wrapper .about_company .container button {
       padding: 30px 60px;
       border-radius: 8px;
-      background: #ff8400;
+      background: #ffde3b;
       font-size: 22px; }
     .wrapper .about_company .container .circle {
       background: #e8e9ef;
@@ -587,7 +718,7 @@ footer {
       footer .container .logo_addr button {
         padding: 20px 60px;
         border-radius: 8px;
-        background: #ff8400;
+        background: #ffde3b;
         font-size: 22px; }
       footer .container .logo_addr .address {
         display: flex;
