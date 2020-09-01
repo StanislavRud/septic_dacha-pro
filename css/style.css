@@ -174,7 +174,7 @@ header .header_bottom .container {
           height: 32px; }
         header .header_bottom .container .header_bottom_reklama .reklama_desc .reklama_item h3 {
           color: white;
-          font-family: 'Helvetica Neue Cyr Medium', sans-serif; }
+          font-family: 'Helvetica Neue Cyr', sans-serif; }
         header .header_bottom .container .header_bottom_reklama .reklama_desc .reklama_item p {
           color: white;
           font-family: "Helvetica Neue Cyr Thin", sans-serif; }
@@ -276,7 +276,7 @@ header .header_bottom .container {
         margin-bottom: 22px; }
       .wrapper .smeta .container .smeta_block .smeta_block__septic p {
         font-size: 18px;
-        font-family: 'Helvetica Neue Cyr Thin', sans-serif; }
+        font-family: 'Helvetica Neue Cyr', sans-serif; }
         .wrapper .smeta .container .smeta_block .smeta_block__septic p span {
           font-family: 'Helvetica Neue Cyr Bold', sans-serif; }
       .wrapper .smeta .container .smeta_block .smeta_block__septic button.podrobnee {
@@ -295,16 +295,20 @@ header .header_bottom .container {
         border-collapse: collapse;
         width: 100%;
         height: 100%; }
-        .wrapper .smeta .container .smeta_block .smeta_block__smeta table thead tr {
-          height: 50px; }
-        .wrapper .smeta .container .smeta_block .smeta_block__smeta table th, .wrapper .smeta .container .smeta_block .smeta_block__smeta table td {
+        .wrapper .smeta .container .smeta_block .smeta_block__smeta table td {
           border: 1px solid grey;
           width: 95px;
           padding-left: 15px;
           font-family: "Helvetica Neue Cyr Medium"; }
         .wrapper .smeta .container .smeta_block .smeta_block__smeta table td[data-label="Наим-е работ/материалов"] {
-          padding-left: 20px;
           width: 250px; }
+        .wrapper .smeta .container .smeta_block .smeta_block__smeta table th {
+          border: 1px solid grey;
+          width: 95px;
+          font-family: "Helvetica Neue Cyr Medium"; }
+        .wrapper .smeta .container .smeta_block .smeta_block__smeta table thead tr {
+          height: 50px;
+          padding-left: 0; }
   .wrapper .smeta .container a {
     margin: 50px 0; }
   .wrapper .smeta .container .gus {
@@ -513,15 +517,13 @@ header .header_bottom .container {
           .wrapper .garanties .container .garanties_wrap .garanties_wrap__desc .garanties_wrap__text p span {
             font-weight: bold; }
         .wrapper .garanties .container .garanties_wrap .garanties_wrap__desc .garanties_wrap__text button {
-          width: max-content;
-          background: #209F01;
-          position: relative;
-          right: -40%; }
+          margin-left: auto;
+          background: #209F01; }
   .wrapper .garanties .container .pechat {
     position: absolute;
     width: 180px;
     height: 170px;
-    margin-top: 40%;
+    margin-top: 640px;
     left: 45%; }
   .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks {
     display: flex;

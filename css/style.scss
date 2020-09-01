@@ -226,7 +226,7 @@ header {
             }
             h3 {
               color: white;
-              font-family: 'Helvetica Neue Cyr Medium', sans-serif;
+              font-family: 'Helvetica Neue Cyr', sans-serif;
             }
             p {
               color: white;
@@ -368,7 +368,7 @@ header {
           }
           p {
             font-size: 18px;
-            font-family: 'Helvetica Neue Cyr Thin', sans-serif;
+            font-family: 'Helvetica Neue Cyr', sans-serif;
 
             span {
               font-family: 'Helvetica Neue Cyr Bold', sans-serif;
@@ -393,21 +393,28 @@ header {
             border-collapse: collapse;
             width: 100%;
             height: 100%;
-            thead {
-              tr {
-                height: 50px;
-              }
-
-            }
-            th, td {
+            td {
               border: 1px solid grey;
               width: 95px;
               padding-left: 15px;
               font-family: "Helvetica Neue Cyr Medium";
             }
             td[data-label="Наим-е работ/материалов"] {
-              padding-left: 20px;
+              //padding-left: 20px;
               width: 250px;
+            }
+            th {
+              border: 1px solid grey;
+              width: 95px;
+              font-family: "Helvetica Neue Cyr Medium";
+            }
+
+            thead {
+              tr {
+                height: 50px;
+                padding-left: 0;
+              }
+
             }
           }
         }
@@ -678,10 +685,8 @@ header {
               }
             }
             button {
-              width: max-content;
+              margin-left: auto;
               background: #209F01;
-              position: relative;
-              right: -40%;
             }
           }
         }
@@ -690,7 +695,7 @@ header {
         position: absolute;
         width: 180px;
         height: 170px;
-        margin-top: 40%;
+        margin-top: 640px;
         left: 45%;
       }
       .garanties_bottom{
