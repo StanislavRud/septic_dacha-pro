@@ -546,6 +546,7 @@ header {
           .tab-content {
             height: 0;
             opacity: 0;
+            display: none;
             transition: .1s all linear;
             font-family: 'Helvetica Neue Cyr', sans-serif;
             line-height: 22px;
@@ -569,6 +570,7 @@ header {
               height: auto;
               opacity: 1;
               padding: 20px;
+              display: block;
             }
           }
 

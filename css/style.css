@@ -411,6 +411,7 @@ header .header_bottom .container {
         .wrapper .questions .container .questions_block .tab .tab-content {
           height: 0;
           opacity: 0;
+          display: none;
           transition: .1s all linear;
           font-family: 'Helvetica Neue Cyr', sans-serif;
           line-height: 22px; }
@@ -428,7 +429,8 @@ header .header_bottom .container {
           .wrapper .questions .container .questions_block .tab input:checked ~ .tab-content {
             height: auto;
             opacity: 1;
-            padding: 20px; }
+            padding: 20px;
+            display: block; }
     .wrapper .questions .container .circle {
       top: 100px;
       background: #e8e9ef; }
