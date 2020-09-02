@@ -525,28 +525,31 @@ header .header_bottom .container {
     height: 170px;
     margin-top: 640px;
     left: 45%; }
-  .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 50px; }
-    .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks .block {
-      width: 32%;
-      border-radius: 10px;
-      padding: 35px 45px;
-      padding-bottom: 0;
-      color: white;
-      text-align: center;
+  .wrapper .garanties .container .garanties_bottom {
+    width: 100%; }
+    .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
-      .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks .block h3 {
-        font-family: 'Helvetica Neue Cyr', sans-serif;
-        font-size: 24px; }
-    .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks .bl_1, .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks .bl_3 {
-      background: #FF8400; }
-    .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks .bl_2 {
-      background: #42ac28; }
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 50px;
+      padding: 0px 10px; }
+      .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks .block {
+        width: 32%;
+        border-radius: 10px;
+        padding: 35px 45px;
+        padding-bottom: 0;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks .block h3 {
+          font-family: 'Helvetica Neue Cyr', sans-serif;
+          font-size: 24px; }
+      .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks .bl_1, .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks .bl_3 {
+        background: #FF8400; }
+      .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks .bl_2 {
+        background: #42ac28; }
   .wrapper .garanties .container .circle {
     background: white;
     top: 112px; }
@@ -738,5 +741,22 @@ footer {
             text-decoration: none;
             color: #e8e9ef;
             font-family: "Helvetica Neue Cyr Thin", sans-serif; }
+
+@media screen and (max-width: 1073px) {
+  header .header_bottom .container .header_bottom_block {
+    justify-content: space-around; }
+    header .header_bottom .container .header_bottom_block:last-child {
+      margin: 0 auto; } }
+@media screen and (max-width: 996px) {
+  header .header_bottom .container .header_bottom_reklama {
+    align-items: flex-end; }
+
+  .wrapper .wy_we .container .wy_we__block .item_we:nth-child(n + 3) {
+    margin-top: 30px; } }
+@media screen and (max-width: 944px) {
+  .wrapper .our_objects .container .our_objects__block {
+    flex-wrap: wrap; }
+    .wrapper .our_objects .container .our_objects__block:last-child {
+      margin: 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */

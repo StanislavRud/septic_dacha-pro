@@ -699,11 +699,13 @@ header {
         left: 45%;
       }
       .garanties_bottom{
+        width: 100%;
         .garanties_bottom__blocks {
           display: flex;
           width: 100%;
           justify-content: space-between;
           margin-top: 50px;
+          padding: 0px 10px;
           .block {
             width: 32%;
             border-radius: 10px;
@@ -984,6 +986,33 @@ footer {
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1073px) {
+  header .header_bottom .container .header_bottom_block {
+    justify-content: space-around;
+    &:last-child {
+      margin: 0 auto;
+    }
+  }
+} 
+
+@media screen and (max-width: 996px) {
+  header .header_bottom .container .header_bottom_reklama {
+    align-items: flex-end;
+  }
+  .wrapper .wy_we .container .wy_we__block .item_we:nth-child(n + 3) {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 944px) {
+  .wrapper .our_objects .container .our_objects__block {
+    flex-wrap: wrap;
+    &:last-child {
+      margin: 0 auto;
     }
   }
 }
