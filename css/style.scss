@@ -92,6 +92,9 @@ header {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      .toggle_menu {
+        display: none;
+      }
       .logo {
         display: flex;
         flex-direction: column;
@@ -686,7 +689,7 @@ header {
             }
             button {
               margin-left: auto;
-              background: #209F01;
+              //background: #209F01;
             }
           }
         }
@@ -1009,10 +1012,30 @@ footer {
 }
 
 @media screen and (max-width: 944px) {
-  .wrapper .our_objects .container .our_objects__block {
-    flex-wrap: wrap;
-    &:last-child {
-      margin: 0 auto;
+  .wrapper .our_objects .container .our_objects__block .object {
+    width: 30%;
+  }
+
+  .wrapper .garanties .container .pechat {
+    width: 150px;
+    height: 145px;
+    margin-top: 600px;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  header .main_desc .container button.header_button.podobrat {
+    left: 43%;
+  }
+
+  .wrapper .garanties .container .garanties_bottom .garanties_bottom__blocks .block {
+    padding: 20px 30px 0;
+    img {
+      width: 100%;
     }
   }
+}
+
+@media screen and (max-width: 876px) {
+
 }
